@@ -1,0 +1,58 @@
+/*for the background*/
+body{
+	background-image: url("images/set.jpg");
+	text-align: center;
+}
+
+/*top image in header*/
+h1{
+	background-image: url("images/death.jpg");
+	text-align: center;
+	height:234px;
+}
+
+/*style paragraphs*/
+p{
+	color: #FFA500;
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 200%;
+	text-align: center;
+	border:5px solid #800080;
+}
+
+/*style the form*/
+form{
+	color: #FFA500;
+font-size: 18px;
+}
+
+/*style a border*/
+.border{
+	color: #FFA500;
+ background: rgba(255, 255, 255, 0.75);
+ border:5px solid #800080;
+}
+
+
+
+/*Got this from Stackoverflow, it's the css for the like and dislike button*/
+.like, .dislike {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: rosybrown;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 20px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.qty1, .qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}

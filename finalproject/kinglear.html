@@ -1,0 +1,117 @@
+<!--html page for king lear book description/review-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Midterm
+    </title>
+    <link href="kinglear.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    link to javascript file-->
+    <script src = "likes.js"></script>
+    
+</head>
+<body>
+    
+<!--    button that leads back to index.html with the list of books-->
+     <div class ="header">
+     <a class = "button" href="http://people.ucsc.edu/~ldurand/art101/finalproject/stump.html">Return to Book List</a>
+
+    
+<!--    name of book-->
+    <h1>King Lear</h1>
+        <h2>Book Description</h2><br>
+    </div><br/>
+    
+<!--    book description-->
+    <div class = "border center">
+         <img class = "center" src = "images/jesterhat3.jpg" style = "contain"><br><br>
+    <p>King Lear, after deciding to divide his kingdom between his three daughters, is decieved by the two daughters who claim their overwhelming love for him. King Lear spirals downward into a delerious state while learning what true love actually means through his honest daughter, Cordelia. Meanwhile, Glousceter's son, Edmund, feeds him lies about Glouscter's illegitamate son, Edgar, sending Glouscter into a similar situation as King Lear. The tragedy focuses on themes of madness, betrayal, chaos, justice, and love. </p>
+    </div><br>
+    
+    
+<!--code from stack overflow to increment count on button press for like and dislike buttons-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="container center"> 
+        <a class="like"><i class="glyphicon glyphicon-thumbs-down"></i>  
+            Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="0" />
+        </a>
+        <a class="dislike"><i class="glyphicon glyphicon-thumbs-down"></i> 
+            Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="0" />
+        </a>
+    </div>
+    
+<!--    comment section-->
+    <div id = "comment">
+    <form action="http://www.hashemian.com/tools/form-post-tester.php/ldurand" method="post">
+        Write Your Own Review: <br>
+        <textarea name ="comment" type = "text" placeholder="Your comment..."></textarea><br>
+        <input value="Submit" type="submit">
+    </form>
+    </div><br>
+    
+    
+<!--    interactive javascript portion that takes input from user to determine how many pages per day they need to read-->
+    <div class = "border" id = "comment">
+    <h1>Like This Book? Read It Yourself!</h1>
+   
+        Total Number of Pages: <textarea name="Pages" id = "pages"placeholder = "Number of pages..."></textarea><br><br>
+        How Long Will it Take to Read: <select name="days" id = "days">
+            <option value="" disabled selected>Days</option>
+            <option value=0>0 days</option>
+            <option value=1>1 day</option>
+            <option value=2>2 days</option>
+            <option value=3>3 days</option>
+            <option value=4>4 days</option>
+            <option value=5>5 days</option>
+            <option value=6>6 days</option>
+            </select>
+
+            <select name="weeks" id = "weeks">
+            <option value="" disabled selected>Weeks</option>
+            <option value=0>0 weeks</option>
+            <option value=1>1 week</option>
+            <option value=2>2 weeks</option>
+            <option value=3>3 weeks</option>
+            <option value=4>4 weeks</option>
+            </select>
+        
+            <select name="months" id = "months">
+            <option value="" disabled selected>Months</option>
+            <option value=0>0 months</option>
+            <option value=1>1 month</option>
+            <option value=2>2 months</option>
+            <option value=3>3 months</option>
+            <option value=4>4 months</option>
+            <option value=5>5 months</option>
+            <option value=6>6 months</option>
+            <option value=7>7 months</option>
+            <option value=8>8 months</option>
+            <option value=9>9 months</option>
+            <option value=10>10 months</option>
+            <option value=11>11 months</option>
+            </select>
+        
+            <select name="year" id = "year">
+            <option value="" disabled selected>Year</option>
+            <option value="0">0 years</option>
+            <option value="1">1 year</option>
+            </select><br><br>
+        
+            <button onclick = "calculate()" >Compute</button>
+         
+<!--     where the result goes after clicking the compute button-->
+       <b><p id = "space"></p></b> 
+</div>
+    
+        <div class="reveal"><a target="_blank" href="likes.js">[Show JavaScript for this page]</a></div>
+  </div><br><br>
+        
+    <div class="reveal" style = "color: white"><a href="kinglear.css">[Show CSS for this page]</a></div> <br>
+    
+</body>
+</html>

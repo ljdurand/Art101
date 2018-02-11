@@ -1,0 +1,77 @@
+/*css for kite runner page
+background color*/
+html {
+    background-color: indianred;
+}
+
+/*have image and change styling of background*/
+body {
+    background-color: bisque;
+    font-family: 'Coming Soon', cursive;Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 2000px;
+    padding: 4em 2em 4em;
+    border: 6px dotted gold;
+    text-align: center;
+background-image: url(images/1a3efe55-f017-4c2e-b711-7d2aaaa602e9.jpg);
+    background-repeat: round;
+    
+
+}
+
+/*for the form*/
+#form-name {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*change header color*/
+h1 {
+    background-color: aquamarine;
+}
+
+/*style paragraphs*/
+p {
+    background-color: moccasin;
+    font-size: 18px;
+    padding: inherit;
+}
+
+/*style the form*/
+form  {
+    color: orangered;
+    background-color: moccasin;
+    padding: 1%;
+     margin: 0 auto;
+    line-height: 1.5;
+        
+}
+
+/*for the like and dislike button taken from stack overflow*/
+.like, .dislike {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: aquamarine;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    
+}
+
+/*taken from stack overflow to style the way the increment looks*/
+.qty1, .qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}
+
+

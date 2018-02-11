@@ -1,0 +1,166 @@
+<!--html for our home page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Final
+    </title>
+    <link href="stump.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src = "stump.js" defer ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script  src = "todolist.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+<!--    project title and links to each other's websites-->
+    <div class = "header title">
+    <h1>STUMP CHRONICLES!</h1>
+        <p><a class = "brown" href = "https://people.ucsc.edu/~cdtapia/art101/finalproject/stump.html">CARLOS TAPIA!!!(fast and furious on a scooter)</a> * <a class = "brown" href = "https://people.ucsc.edu/~bbzeng/art101/finalproject/stump.html">BIQI ZENG!!!!!!!(exclamation point masta)</a> * <a class = "brown" href ="https://people.ucsc.edu/~ldurand/art101/finalproject/stump.html">LISA DURAND!!!(programming princess)</a>
+        </p>
+    </div><br><br>
+    
+
+<!--    scroll menu of book images-->
+    <div id="container">
+    <div id="parent">
+        <img src = "images/DeathOfASalesman.jpg" style="width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/516M1eQGQQL._SY344_BO1,204,203,200_.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/taleOfTwoCities.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/flowers_for_algernon.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/peterpan.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/gatsby.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/onceandfutureking.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/tomsawyer.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/king-lear-william-shakspeare-paperback-cover-art.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/77203.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/Perksofbeingwallflower1.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/PrideAndPrejudice.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/ofMiceAndMen.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/littlePrince.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/1984-book-cover.jpeg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/lionwitchwardrobe.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/outsiders.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/twenty.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+        <img src = "images/crucible.jpg" style = "width: 150px;height: 215px;margin-right: 5px">
+    </div>
+</div>
+    
+<!--arrows-->
+<span id="panLeft" data-scroll-modifier='-1' class="glyphicon glyphicon-arrow-left panner"></span>
+<span id="panRight" data-scroll-modifier='1' class="glyphicon glyphicon-arrow-right panner"></span>
+    
+    
+<!--listed recommended books and images of the books, acting as links to their html pages-->
+<div id = "wrapper">
+    <div class = "center" id = "leftBorder">
+        <h1>RECOMMENDED BOOKS!!!:</h1>
+        <a href ="deathofasalesman.html"> <img src = "images/DeathOfASalesman.jpg" style="width: 200px;height: 286px" class = "space"></a>
+        <a href ="separatepeace.html"> <img src = "images/516M1eQGQQL._SY344_BO1,204,203,200_.jpg" style = "width: 200px;height: 286px" class = "space"></a><br><br>
+        <a href ="kinglear.html"> <img src = "images/king-lear-william-shakspeare-paperback-cover-art.jpg" style = "width: 200px;height: 286px" class = "space"></a>
+        <a href ="kiterunner.html"> <img src = "images/77203.jpg" style = "width: 200px;height: 286px"></a>
+    </div><br>
+    
+    
+    <!--        random book generator-->
+    <div class = "center" id = "rightBorder">
+<!--choosing a genre-->
+        SPECIFY WHAT BOOK YOU'RE LOOKING FOR!!!: <select name="genre" id = "genre">
+            <option value="" disabled selected>GENRE</option>
+           <option value="Tragedy">TRAGEDY</option>
+            <option value="Fantasy">FANTASY</option>
+            <option value="Children's Literature">CHILDREN'S LITERATURE</option>
+            <option value="Historical Fiction">HISTORICAL FICTION</option>
+            <option value="Coming of Age">COMING OF AGE</option>
+            <option value="Science Fiction">SCIENCE FICTION</option>
+            <option value="Satire">SATIRE</option>
+            </select>
+        
+<!--        choosing a page amount-->
+            <select name="pages" id = "pages">
+            <option value="" disabled selected>LENGTH</option>
+            <option value="0-150">0-150</option>
+            <option value="150-300">150-300</option>
+            <option value="300+">300+</option>
+            </select><br><br>
+        
+<!--        button that calls function main() onclick-->
+        <button id = "randomButton" onclick = "main()">YOUR NEXT BOOK CHOICE IS!!!...</button><br><br>
+<!--        where result of the random button generator is outputed-->
+        <div id = "js-output"></div>
+    </div>
+    
+
+         
+<!--         todo list-->
+         <div id = "rightBorder" >
+             
+          <div>
+             <p>
+                 <label for = "new-task">ADD A BOOK TO READ!!!</label>
+                <input id = "new-task" type = "text" placeholder="WHICH BOOK DO YOU WANT TO READ!?!..."/>
+                <button>ADD!!!</button></p>
+         </div>
+                 
+<!--dropdown and scroll menu-->
+<!--select a book and add it to the todo list-->
+      <div class="dropdown" >
+      <button class="dropbtn">LIST OF BOOKS!!!</button>
+      <div class="dropdown-content vertical-menu">
+
+      <a href="javascript:;" class="special_field_link">1984</a>
+      <a href="javascript:;" class="special_field_link">A Separate Peace</a>
+      <a href="javascript:;" class="special_field_link">A Tale of Two Cities</a>
+      <a href="javascript:;" class="special_field_link">Death of a Salesman</a>
+      <a href="javascript:;" class="special_field_link">Flowers for Algernon</a>
+      <a href="javascript:;" class="special_field_link">King Lear</a>
+      <a href="javascript:;" class="special_field_link">Kite Runner</a>
+      <a href="javascript:;" class="special_field_link">Of Mice and Men</a>
+      <a href="javascript:;" class="special_field_link">Peter Pan</a>
+      <a href="javascript:;" class="special_field_link">Pride and Prejudice</a>
+      <a href="javascript:;" class="special_field_link">The Crucible</a>
+      <a href="javascript:;" class="special_field_link">The Great Gatsby</a>
+      <a href="javascript:;" class="special_field_link">The Lion, the Witch, and the Wardrobe</a>
+      <a href="javascript:;" class="special_field_link">The Little Prince</a> 
+      <a href="javascript:;" class="special_field_link">The Once and Future King</a>
+      <a href="javascript:;" class="special_field_link">The Outsiders</a>
+      <a href="javascript:;" class="special_field_link">The Perks of Being a Wallflower</a>
+      <a href="javascript:;" class="special_field_link">The Adventures of Tom Sawyer</a>
+      <a href="javascript:;" class="special_field_link">Twenty Thousand Leagues Under the Sea</a>
+        </div>
+    </div>
+
+
+      
+ 
+<!--      todo list section-->
+      <h3>TODO</h3>
+      
+      <ul id="incomplete-tasks">
+        <li></li>
+        
+      </ul>
+      
+<!--completed section-->
+      <h3>COMPLETED</h3>
+      <ul id="completed-tasks">
+        <li></li>
+      </ul>
+    </div>
+    </div>
+    
+
+<!--    button fixed on side to take to top-->
+    <div> <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a></div>
+
+    <div class="reveal"><a target="_blank" href="stump.js">[Show JavaScript for this page]</a></div><br><br>
+    <div class="reveal"><a target="_blank" href="todolist.js">[Show JavaScript for this page]</a></div><br><br>
+        
+        <div class="reveal"><a href="stump.css">[Show CSS for this page]</a></div><br>
+    </div><br>
+    
+</body>
+</html>
